@@ -81,7 +81,7 @@ The cleaned crowdfunding databases after the transformation step were saved into
 - [backers.csv](./Data/backers.csv)  
 
 ### Deliverable 3
-The ERDs of our crowdfunding databases are shown in Fig. 1. To accomplish the Load phase of the ETL process, I applied either the standard query technique such as `FOREIGN KEY .. REFERENCES ..` or the tedious query technique by using the combination of `ALTER TABLE .. ADD CONSTRAINT .. FOREIGN KEY ..` and `REFERENCES ..` clauses when assigning foreign keys and referencing other tables to replicate our ERDs. The code snippets are outlined below, the first 10 rows of *backers* table (**Table 1**), and the complete SQL scripts can be referred in [crowdfunding_db_schema.sql](./Queries/crowdfunding_db_schema.sql).
+The ERDs of our crowdfunding databases are shown in Fig. 1. To accomplish the Load phase of the ETL process, I applied either the standard query technique such as `FOREIGN KEY .. REFERENCES ..` or the tedious query technique by using the combination of `ALTER TABLE .. ADD CONSTRAINT .. FOREIGN KEY ..` and `REFERENCES ..` clauses when assigning foreign keys and referencing other tables to replicate our ERDs. The code snippets and the first 10 rows of *backers* table (**Table 1**) are outlined below, and the complete SQL scripts can be referred in [crowdfunding_db_schema.sql](./Queries/crowdfunding_db_schema.sql).
 
 ```
 -- Creating tables for crowdfunding_db named campaign
@@ -211,7 +211,7 @@ SELECT * FROM email_backers_remaining_goal_amount;
 ![Table 4](./Data/email_backers_remaining_goal_amount.png)
 
 ## Summary
-All deliverables have been completed and summarized according to Module 8 assignment requirements, including the analysis bonus challenges by using SQL queries. I tried my best to avoid ambiguous referencing when writing the SQL queries. The refactored SQL scripts for accomplishing the bonus challenges can be referred in [crowdfunding_SQL_Analysis.sql](./Queries/crowdfunding_SQL_Analysis.sql).
+All deliverables have been completed and summarized according to Module 8 assignment requirements, including the analysis bonus challenges by using SQL queries. I also tried my best to ensure our databases were well structured and avoid ambiguous referencing when writing the SQL queries. The refactored SQL scripts for accomplishing the bonus challenges can be referred in [crowdfunding_SQL_Analysis.sql](./Queries/crowdfunding_SQL_Analysis.sql).
 
 ## References
 [Database model](https://en.wikipedia.org/wiki/Database_model)\
